@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudo class</title>
+    <style>
+        /* selector:pseudo-class {
+  property: value;
+} */
+
+        a {
+            text-decoration: none;
+        }
+
+        /* unvisited link */
+        a:link {
+            color: #f50808;
+        }
+
+        /* visited link */
+        a:visited {
+            color: blue;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: #e6dedec0;
+        }
+
+        /* selected link */
+        a:active {
+
+            color: aqua;
+        }
+
+        p::first-line {
+            color: #ff0000;
+            font-weight: 700;
+
+        }
+
+        .title:after {
+            content: " ,Hello World";
+        }
+
+        button:hover {
+
+            background-color: aqua;
+            border-radius: 50px;
+            padding: 10px;
+            width: 150px;
+            height: 50px;
+            border: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        ul>li{
+
+            list-style: none;
+           
+        }
+
+        li:nth-child(2n){
+
+            color: #0818f1b0;
+            font-size: 35px;
+            font-weight: 900;
+        
+        }
+
+        li:nth-child(2n+1){
+
+            color: #ff0000;
+            font-weight: bolder;
+            font-size:45px;
+            list-style-position: outside;
+            list-style: circle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title"> Pseudo class practice</h1>
+
+    <a href="http://google.com">Google</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati mollitia nobis, totam ut quas id fugiat
+        similique, maxime quaerat provident sequi iure dolor voluptas culpa sunt iusto cum ratione tempora!</p>
+
+    <button>Click Here</button>
+    <!-- sort cut =>ul>li{item-10}*10 -->
+
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+
+</body>
+
+</html>
