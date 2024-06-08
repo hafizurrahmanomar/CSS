@@ -1,0 +1,17 @@
+.box1{
+    width: 400px;
+    height: 200px;
+    border: 5px solid saddlebrown;
+    margin: 10px;
+    /* overflow: auto; */
+    overflow: scroll;
+}
+
+.box2{
+    width: 400px;
+    height: 200px;
+    border: 5px solid purple;
+    margin: 10px;
+    /* overflow: hidden; */
+    overflow-x: scroll;
+}
