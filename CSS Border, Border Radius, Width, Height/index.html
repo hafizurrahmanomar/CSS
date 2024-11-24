@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Border and radius</title>
+    <!-- Internal CSS -->
     <style>
+      h1 {
+        color: brown;
+      }
+      .box-1 {
+        background-color: bisque;
+        width: 600px;
+        height: 200px;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border: 10px solid brown;
+        border-radius: 15px;
+      }
 
-.box-1{
-background-color: bisque;
-width: 600px;
-height: 200px;
-padding-top: 50px ;
-padding-right: 30px;
-padding-left: 30px;
-border: 10px solid brown ;
-border-radius: 15px;
-
-}
-box-2,img{
-    margin-top: 50px;
-    border: 20px solid black;
-    border-right-color: brown;
-    border-radius: 20px;
-
-    
-}
+      box-2,
+      img {
+        margin-top: 50px;
+        border: 20px solid black;
+        border-right-color: brown;
+        border-left-color: blue;
+        border-radius: 20px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Border radius practice</h1>
     <div class="box-1">
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatum sed nam? Consequatur ullam perspiciatis, explicabo, magni nulla dolorem blanditiis accusantium nemo, itaque eos sed enim animi odit labore consequuntur.</p>
+      <!-- InLine CSS -->
+      <p style="color: blue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        voluptatum sed nam? Consequatur ullam perspiciatis, explicabo, magni
+        nulla dolorem blanditiis accusantium nemo, itaque eos sed enim animi
+        odit labore consequuntur.
+      </p>
     </div>
 
     <div class="box-2">
-
-<img src="images/cat.jpg" alt="cat-pic">
+      <img src="images/cat.jpg" alt="cat-pic" />
     </div>
-
-</body>
+  </body>
 </html>
