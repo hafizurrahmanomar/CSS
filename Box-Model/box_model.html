@@ -16,6 +16,8 @@
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         margin: 20px;
         display: flex;
+        overflow: auto;
+        
       }
 
       .border-box {
@@ -28,21 +30,42 @@
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         margin: 20px;
+        /*overflow: hidden;*/
+        /*overflow: visible;*/
+        /*overflow: scroll;*/
+        overflow: auto;
+        overflow-wrap: break-word;
+      }
+
+      .overflow-wrap{
+        height: 200px;
+        width: 150px;
+        border: 1px solid red;
+        overflow-wrap: break-word;
       }
     </style>
   </head>
-  <h1>box-sizing:content-box</h1>
+  <h1>box-sizing:content-box & Overflow</h1>
   <p class="content-box">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse
     suscipit sapiente quod consectetur, omnis unde doloribus perferendis rem
     odio explicabo ea quasi aliquam quidem possimus iste odit officia veniam.
+    
   </p>
 
-  <h1>box-sizing:border-box</h1>
+  <h1>box-sizing:border-box & Overflow</h1>
   <p class="border-box">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse
     suscipit sapiente quod consectetur, omnis unde doloribus perferendis rem
     odio explicabo ea quasi aliquam quidem possimus iste odit officia veniam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse
+    suscipit sapiente quod consectetur, omnis unde doloribus perferendis rem
+    odio explicabo ea quasi aliquam quidem possimus iste odit officia veniam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, esse
+    suscipit sapiente quod consectetur, omnis unde doloribus perferendis rem
+    odio explicabo ea quasi aliquam quidem possimus iste odit officia veniam.
   </p>
+  <h1>overflow-wrap: break-word</h1>
+  <p class="overflow-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim velit, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
   <body></body>
 </html>
